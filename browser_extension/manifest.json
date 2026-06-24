@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "Study Tracker",
+    "version": "1.0",
+    "description": "Sends the current active tab URL and title to the local Student Focus Detector app.",
+    "permissions": [
+        "tabs",
+        "activeTab",
+        "alarms"
+    ],
+    "host_permissions": [
+        "http://127.0.0.1:8765/*"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    }
+}

@@ -1,0 +1,5 @@
+date,label,kind,seconds,is_educational,student_name,roll_number
+2026-01-15,localhost,website,50.2,0,Unknown,Unknown
+2026-01-15,en.wikipedia.org,website,33.2,1,Unknown,Unknown
+2026-01-15,mega.nz,website,11.8,0,Unknown,Unknown
+2026-01-15,mail.google.com,website,15.9,0,Unknown,Unknown
