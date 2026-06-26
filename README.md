@@ -94,33 +94,7 @@ The system is designed for educational and research use in schools, colleges, co
 
 ---
 
-## System Architecture
-
-```mermaid
-flowchart TB
-    subgraph Client["Student Workstation"]
-        CAM[Webcam]
-        BROWSER[Chrome / Edge Browser]
-        APPS[Windows Applications]
-        EXT[Browser Extension]
-        APP[Streamlit Application]
-        FD[Focus Detector]
-        AT[Activity Tracker]
-        CSV[(CSV Logs)]
-    end
-
-    CAM --> FD
-    FD --> APP
-    BROWSER --> EXT
-    EXT -->|POST /active-tab| AT
-    APPS --> AT
-    AT --> APP
-    APP --> CSV
-    CSV --> ANALYTICS[Analytics & Dashboards]
-    ANALYTICS --> APP
-```
-
-**Session workflow:**
+## Session workflow
 
 1. Student registers name and roll number, then starts a study session.
 2. The webcam captures frames; the focus detector evaluates face, eyes, and gaze.
